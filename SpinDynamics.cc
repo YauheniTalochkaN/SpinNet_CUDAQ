@@ -118,7 +118,7 @@ int main()
 
     cudaq::schedule schedule(steps);
 
-    cudaq::integrators::runge_kutta integrator(4, 0.1);
+    cudaq::integrators::crank_nicolson integrator(2, 0.1);
 
     std::vector<cudaq::spin_op> observables(num_spins);
 
